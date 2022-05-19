@@ -13,7 +13,7 @@
   top: 42px;
   z-index: 10;
   background: rgba(205, 240, 234, 0.7);
-  padding: 5px;
+  padding: 4px 4px 4px 12px;
   border-radius: 4px;
   /* display: none; */
   color: rgb(55, 40, 89);
