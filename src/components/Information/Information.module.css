@@ -18,13 +18,15 @@
   /* display: none; */
   color: rgb(55, 40, 89);
   transform: scaleX(0) scaleY(0);
+  opacity: 0;
   transform-origin: left;
-  transition: all 500ms cubic-bezier(0.79, 0.43, 0.44, 0.96);
+  transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
 }
 
 .information:hover ~ .blockToShow {
   display: flex;
   transform: scaleX(1) scaleY(1);
+  opacity: 1;
 }
 .blockToShow div {
   display: flex;
