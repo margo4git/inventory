@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { Inventory } from "./containers/Inventory/Inventory";
+import { useState } from "react";
+import {
+  InventoryProvider,
+  InvetoryConsumer,
+  useInventory,
+} from "./context/inventory";
+import { Controls } from "./containers/Controls/Controls";
+import { Item } from "./components/Item/Item";
+import { ActiveItem } from "./containers/ActiveItem/ActiveItem";
+import { Information } from "./components/Information/Information";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <InventoryProvider>
+      <InvetoryConsumer>
+        {({ deleteItem }) => {
+          return (
+            <>
+              <Information />
+              <div onClick={deleteItem} className="allScreen">
+                <ActiveItem />
+                <div className="container">
+                  <Controls />
+                  <Inventory />
+                </div>
+              </div>
+            </>
+          );
+        }}
+      </InvetoryConsumer>
+    </InventoryProvider>
   );
 }
 

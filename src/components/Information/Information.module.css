@@ -1,0 +1,38 @@
+.information {
+  top: 16px;
+  left: 8px;
+  position: absolute;
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+}
+
+.blockToShow {
+  position: absolute;
+  left: 46px;
+  top: 42px;
+  z-index: 10;
+  background: rgba(205, 240, 234, 0.7);
+  padding: 5px;
+  border-radius: 4px;
+  /* display: none; */
+  color: rgb(55, 40, 89);
+  transform: scaleX(0) scaleY(0);
+  transform-origin: left;
+  transition: all 500ms cubic-bezier(0.79, 0.43, 0.44, 0.96);
+}
+
+.information:hover ~ .blockToShow {
+  display: flex;
+  transform: scaleX(1) scaleY(1);
+}
+.blockToShow div {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  padding: 8px;
+  height: 36px;
+  width: 36px;
+}

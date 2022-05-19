@@ -1,0 +1,16 @@
+.inventory th,
+tr {
+  position: relative;
+  border: 2px solid;
+  height: 75px;
+  width: 75px;
+  border-radius: 6px;
+  border-color: #bdabe2;
+}
+tr {
+  background: radial-gradient(
+    circle,
+    rgba(247, 219, 240, 1) 50%,
+    rgba(189, 171, 226, 1) 100%
+  );
+}

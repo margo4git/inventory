@@ -1,0 +1,26 @@
+.Button {
+  border: none;
+  margin: 0 25px 0 25px;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-duration: 0.4s;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+}
+
+.Button:hover {
+  background-color: #cdf0ea;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+}
+.add {
+  background-image: url(./../../images/streamline-icon-add-1@48x48.png);
+}
+.remove {
+  background-image: url(./../../images/streamline-icon-remove-1@48x48.png);
+}
+.again {
+  background-image: url(./../../images/streamline-icon-sync@48x48.png);
+}
